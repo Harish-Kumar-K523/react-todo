@@ -1,13 +1,85 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+}
+#main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20cm;
+  height: auto;
+  background-color: #D5CEA3;
+  padding: 40px;
+  border-radius: 3px;
+  overflow-wrap: break-word;
+}
+form{
+  margin-bottom: 27px;
+}
+body {
+  background-color: #2E4F4F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  font-size: large;
+  position: relative;
+  font-weight: bold;
+}
+label{
+  margin: 0px !important;
+  background-color: #CBE4DE !important;
+  font-size: 1rem;
+  padding: 13px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border: 0.3px solid #000000;
+  border-radius: 3px !important;
+  margin-bottom: 5px !important;
+}
+label:hover{
+  text-decoration: line-through;
+  color: red;
+}
+span{
+  font-size: 1rem;
+  padding: 10px;
+}
+input{
+  border: none;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  text-align: center;
+  font-weight: 550;
+  border-radius: 2px;
+}
+button{
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.9rem;
+  background-color: #0E8388;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #17585a;
+}
+@media (max-width: 800px) {
+  #main{
+    width: 80%;
+    padding: 40px;
+  }
 }
